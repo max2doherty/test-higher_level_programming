@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 def add_integer(a, b=98):
     """
-        add_integer function adds two numbers
-        args a: an int or a float
-            b: an int or a float
-        Returns:
-            int: The sum of a and b, both cast to integers.
+    Add two integers.
 
-         Raises:
-             TypeError: If a or b are not integers or floats.
+    Args:
+        a (int or float): The first number.
+        b (int or float, optional): The second number, default is 98.
+
+    Returns:
+        int: The sum of a and b, both cast to integers.
+
+    Raises:
+        TypeError: If a or b are not integers or floats.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
