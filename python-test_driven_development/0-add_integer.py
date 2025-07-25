@@ -6,6 +6,7 @@
     Returns an integer: the addition of a and b
 """
 
+
 def add_integer(a, b=98):
     """
         add_integer function adds two numbers
@@ -16,10 +17,10 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    
+
     if isinstance(a, float) and (a != a or a == float('inf') or a == float('-inf')):
         raise OverflowError("a is too large to convert to an integer")
     if isinstance(b, float) and (b != b or b == float('inf') or b == float('-inf')):
         raise OverflowError("b is too large to convert to an integer")
-    
+
     return int(a) + int(b)
