@@ -3,7 +3,7 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """prints My Name is 
+    """prints My Name is
         arguments
             first_name: a persons first name
             last_name: a persons last name
